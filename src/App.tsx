@@ -102,7 +102,7 @@ function App() {
               <h2 className="text-xl font-bold text-gray-800 mb-4">分析结果</h2>
               {result ? (
                 <div className="space-y-2">
-                  <p className="text-lg"><span className="font-semibold">函数解析式:</span> <code className="bg-gray-100 px-2 py-1 rounded">y = {result.string}</code></p>
+                  <p className="text-lg"><span className="font-semibold">函数解析式:</span> <code className="bg-gray-100 px-2 py-1 rounded">{result.string.startsWith('y =') ? result.string : `y = ${result.string}`}</code></p>
                   <p className="text-gray-600"><span className="font-semibold">R² (决定系数):</span> {result.r2.toFixed(4)}</p>
                   
                   {intersections && intersections.length > 0 && (
