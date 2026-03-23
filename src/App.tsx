@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import DataInput from './components/DataInput';
 import Chart from './components/Chart';
 import { fitData, modelNames, type Point, type FittingType, type FittingResult } from './utils/fitting';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Papa from 'papaparse';
 import { Upload, Plus, Trash2 } from 'lucide-react';
 import type { Point } from '../utils/fitting';
