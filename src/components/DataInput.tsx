@@ -28,6 +28,8 @@ const DataInput: React.FC<DataInputProps> = ({ data, onChange }) => {
           }
         });
         onChange([...data, ...newData]);
+        // 清空 input value 使得同一文件可以重复选择
+        e.target.value = '';
       },
     });
   };
