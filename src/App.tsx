@@ -5,7 +5,13 @@ import { fitData, modelNames, type Point, type FittingType, type FittingResult }
 
 function App() {
   const [data, setData] = useState<Point[]>([
-    [1, 2], [2, 3.8], [3, 8.5], [4, 15.2], [5, 24]
+    [0, 131], [0.5, 140], [1, 149], [1.5, 155], [2, 161],
+    [2.5, 168], [3, 173], [3.5, 176], [4, 177], [4.5, 180],
+    [5, 181], [5.5, 179], [6, 177], [6.5, 171], [7, 168],
+    [7.5, 163], [8, 155], [8.5, 147], [9, 140], [9.5, 131],
+    [10, 129], [10.5, 118], [11, 105], [11.5, 95], [12, 88],
+    [12.5, 83], [13, 81], [13.5, 79], [14, 78], [14.5, 80],
+    [15, 77]
   ]);
   const [modelType, setModelType] = useState<FittingType>('polynomial-2');
   const [result, setResult] = useState<FittingResult | null>(null);
